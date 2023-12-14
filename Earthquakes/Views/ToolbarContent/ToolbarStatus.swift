@@ -17,11 +17,13 @@ struct ToolbarStatus: View {
             if isLoading {
                 Text("Checking for Earthquakes...")
                 Spacer()
-            } else if lastUpdated == Date.distantFuture.timeIntervalSince1970 {
+            }
+            else if lastUpdated == Date.distantFuture.timeIntervalSince1970 {
                 Spacer()
                 Text("\(quakesCount) Earthquakes")
                     .foregroundStyle(Color.secondary)
-            } else {
+            }
+            else {
                 let lastUpdatedDate = Date(timeIntervalSince1970: lastUpdated)
                 Text("Updated \(lastUpdatedDate.formatted(.relative(presentation: .named)))")
                 Text("\(quakesCount) Earthquakes")

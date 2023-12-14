@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-
 struct Quakes: View {
     @AppStorage("lastUpdated")
     var lastUpdated = Date.distantFuture.timeIntervalSince1970
-
 
     @EnvironmentObject var provider: QuakesProvider
     @State var editMode: EditMode = .inactive
@@ -20,7 +18,6 @@ struct Quakes: View {
     @State var selection: Set<String> = []
     @State private var error: QuakeError?
     @State private var hasError = false
-
 
     var body: some View {
         NavigationView {
@@ -45,16 +42,15 @@ struct Quakes: View {
     }
 }
 
-
 extension Quakes {
     var title: String {
         if selectMode.isActive || selection.isEmpty {
             return "Earthquakes"
-        } else {
+        }
+        else {
             return "\(selection.count) Selected"
         }
     }
-
 
     func deleteQuakes(at offsets: IndexSet) {
         provider.deleteQuakes(atOffsets: offsets)
@@ -74,7 +70,8 @@ extension Quakes {
         do {
             try await provider.fetchQuakes()
             lastUpdated = Date().timeIntervalSince1970
-        } catch {
+        }
+        catch {
             self.error = error as? QuakeError ?? .unexpectedError(error: error)
             self.hasError = true
         }
@@ -86,7 +83,10 @@ struct Quakes_Previews: PreviewProvider {
     static var previews: some View {
         Quakes()
             .environmentObject(
-                QuakesProvider(client:
-                                QuakeClient(downloader: TestDownloader())))
+                QuakesProvider(
+                    client:
+                        QuakeClient(downloader: TestDownloader())
+                )
+            )
     }
 }

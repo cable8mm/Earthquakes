@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Quakes {
-    
+
     @ToolbarContentBuilder
     func toolbarContent() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
@@ -16,7 +16,8 @@ extension Quakes {
                 SelectButton(mode: $selectMode) {
                     if selectMode.isActive {
                         selection = Set(provider.quakes.map { $0.code })
-                    } else {
+                    }
+                    else {
                         selection = []
                     }
                 }

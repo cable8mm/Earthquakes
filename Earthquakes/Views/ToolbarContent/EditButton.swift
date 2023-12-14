@@ -16,14 +16,16 @@ struct EditButton: View {
                 if editMode == .active {
                     action()
                     editMode = .inactive
-                } else {
+                }
+                else {
                     editMode = .active
                 }
             }
         } label: {
             if editMode == .active {
                 Text("Cancel").bold()
-            } else {
+            }
+            else {
                 Text("Edit")
             }
         }

@@ -24,11 +24,13 @@ struct QuakeMagnitude: View {
 }
 
 struct QuakeMagnitude_Previews: PreviewProvider {
-    static var previewQuake = Quake(magnitude: 1.0,
-                                    place: "Shakey Acres",
-                                    time: Date(timeIntervalSinceNow: -1000),
-                                    code: "nc73649170",
-                                    detail: URL(string: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73649170.geojson")!)
+    static var previewQuake = Quake(
+        magnitude: 1.0,
+        place: "Shakey Acres",
+        time: Date(timeIntervalSinceNow: -1000),
+        code: "nc73649170",
+        detail: URL(string: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73649170.geojson")!
+    )
     static var previews: some View {
         QuakeMagnitude(quake: previewQuake)
     }

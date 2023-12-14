@@ -48,7 +48,7 @@ actor QuakeClient {
         }
     }
 
-    init(downloader: HTTPDataDownloader) {
+    init(downloader: any HTTPDataDownloader = URLSession.shared) {
         self.downloader = downloader
     }
 

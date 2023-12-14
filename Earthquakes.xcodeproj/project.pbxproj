@@ -11,6 +11,8 @@
 		9AD5A9FE2B2AEB8F00C47448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5A9FD2B2AEB8F00C47448 /* ContentView.swift */; };
 		9AD5AA002B2AEB9100C47448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD5A9FF2B2AEB9100C47448 /* Assets.xcassets */; };
 		9AD5AA032B2AEB9100C47448 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD5AA022B2AEB9100C47448 /* Preview Assets.xcassets */; };
+		9AD5AA0A2B2AEDEC00C47448 /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA092B2AEDEC00C47448 /* Quake.swift */; };
+		9AD5AA0C2B2AEF5B00C47448 /* QuakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA0B2B2AEF5B00C47448 /* QuakeError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		9AD5A9FD2B2AEB8F00C47448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9AD5A9FF2B2AEB9100C47448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AD5AA022B2AEB9100C47448 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9AD5AA092B2AEDEC00C47448 /* Quake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quake.swift; sourceTree = "<group>"; };
+		9AD5AA0B2B2AEF5B00C47448 /* QuakeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				9AD5A9FD2B2AEB8F00C47448 /* ContentView.swift */,
 				9AD5A9FF2B2AEB9100C47448 /* Assets.xcassets */,
 				9AD5AA012B2AEB9100C47448 /* Preview Content */,
+				9AD5AA092B2AEDEC00C47448 /* Quake.swift */,
+				9AD5AA0B2B2AEF5B00C47448 /* QuakeError.swift */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD5AA0C2B2AEF5B00C47448 /* QuakeError.swift in Sources */,
 				9AD5A9FE2B2AEB8F00C47448 /* ContentView.swift in Sources */,
+				9AD5AA0A2B2AEDEC00C47448 /* Quake.swift in Sources */,
 				9AD5A9FC2B2AEB8F00C47448 /* EarthquakesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

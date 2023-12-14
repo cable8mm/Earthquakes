@@ -25,7 +25,7 @@ actor QuakeClient {
             let data = try await downloader.httpData(from: feedURL)
             let allQuakes = try decoder.decode(GeoJSON.self, from: data)
             var updatedQuakes = allQuakes.quakes
-            if let olderThanOneHour = updatedQuakes.firstIndex(where: {  $0.time.timeIntervalSinceNow > 3600 }) {
+            if let olderThanOneHour = updatedQuakes.firstIndex(where: { $0.time.timeIntervalSinceNow > 3600 }) {
                 let indexRange = updatedQuakes.startIndex..<olderThanOneHour
                 try await withThrowingTaskGroup(of: (Int, QuakeLocation).self) { group in
                     for index in indexRange {
@@ -44,7 +44,7 @@ actor QuakeClient {
                     }
                 }
             }
-          return updatedQuakes
+            return updatedQuakes
         }
     }
 
@@ -71,7 +71,8 @@ actor QuakeClient {
             let location = try await task.value
             quakeCache[url] = .ready(location)
             return location
-        } catch {
+        }
+        catch {
             quakeCache[url] = nil
             throw error
         }

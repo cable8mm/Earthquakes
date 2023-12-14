@@ -19,7 +19,8 @@ extension NSCache where KeyType == NSString, ObjectType == CacheEntryObject {
             if let entry = newValue {
                 let value = CacheEntryObject(entry: entry)
                 setObject(value, forKey: key)
-            } else {
+            }
+            else {
                 removeObject(forKey: key)
             }
         }

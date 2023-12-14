@@ -37,7 +37,8 @@ extension QuakeLocation.OriginProperties: Decodable {
         let longitude = try container.decode(String.self, forKey: .longitude)
         let latitude = try container.decode(String.self, forKey: .latitude)
         guard let longitude = Double(longitude),
-              let latitude = Double(latitude) else { throw QuakeError.missingData }
+            let latitude = Double(latitude)
+        else { throw QuakeError.missingData }
         self.longitude = longitude
         self.latitude = latitude
     }

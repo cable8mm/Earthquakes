@@ -1,6 +1,5 @@
 import Foundation
 
-
 struct Quake: Identifiable {
     var id: String { code }
     let magnitude: Double
@@ -28,10 +27,10 @@ extension Quake: Decodable {
         let rawDetail = try? values.decode(URL.self, forKey: .detail)
 
         guard let magnitude = rawMagnitude,
-              let place = rawPlace,
-              let time = rawTime,
-              let code = rawCode,
-              let detail = rawDetail
+            let place = rawPlace,
+            let time = rawTime,
+            let code = rawCode,
+            let detail = rawDetail
         else {
             throw QuakeError.missingData
         }

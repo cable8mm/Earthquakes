@@ -6,6 +6,7 @@
 //
 
 import XCTest
+
 @testable import Earthquakes
 
 final class EarthquakesTests: XCTestCase {
@@ -16,7 +17,7 @@ final class EarthquakesTests: XCTestCase {
 
         XCTAssertEqual(quake.code, "73649170")
 
-        let expectedSeconds = TimeInterval(1636129710550) / 1000
+        let expectedSeconds = TimeInterval(1_636_129_710_550) / 1000
         let decodedSeconds = quake.time.timeIntervalSince1970
 
         XCTAssertEqual(expectedSeconds, decodedSeconds, accuracy: 0.00001)
@@ -30,7 +31,7 @@ final class EarthquakesTests: XCTestCase {
         XCTAssertEqual(decoded.quakes.count, 6)
         XCTAssertEqual(decoded.quakes[0].code, "73649170")
 
-        let expectedSeconds = TimeInterval(1636129710550) / 1000
+        let expectedSeconds = TimeInterval(1_636_129_710_550) / 1000
         let decodedSeconds = decoded.quakes[0].time.timeIntervalSince1970
         XCTAssertEqual(expectedSeconds, decodedSeconds, accuracy: 0.00001)
     }

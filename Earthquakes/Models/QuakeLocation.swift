@@ -28,10 +28,14 @@ struct QuakeLocation: Decodable {
 
     init(latitude: Double, longitude: Double) {
         self.properties =
-            RootProperties(products: Products(origin: [
-                Origin(properties:
-                OriginProperties(latitude: latitude, longitude: longitude))
-            ]))
+            RootProperties(
+                products: Products(origin: [
+                    Origin(
+                        properties:
+                            OriginProperties(latitude: latitude, longitude: longitude)
+                    )
+                ])
+            )
     }
 }
 

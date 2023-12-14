@@ -5,8 +5,8 @@
 //  Created by samgu.lee on 14/12/23.
 //
 
-import SwiftUI
 import MapKit
+import SwiftUI
 
 struct QuakeDetailMap: View {
     let location: QuakeLocation
@@ -24,12 +24,12 @@ struct QuakeDetailMap: View {
         Map(coordinateRegion: $region, annotationItems: [place]) { place in
             MapMarker(coordinate: place.location, tint: tintColor)
         }
-            .onAppear {
-                withAnimation {
-                    region.center = place.location
-                    region.span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
-                }
+        .onAppear {
+            withAnimation {
+                region.center = place.location
+                region.span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
             }
+        }
     }
 }
 

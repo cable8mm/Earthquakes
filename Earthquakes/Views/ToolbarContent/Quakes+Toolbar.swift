@@ -8,8 +8,7 @@
 import SwiftUI
 
 extension Quakes {
-
-
+    
     @ToolbarContentBuilder
     func toolbarContent() -> some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {

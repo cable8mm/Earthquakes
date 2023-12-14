@@ -114,13 +114,13 @@
 				9AD5AA2C2B2AFF9000C47448 /* Views */,
 				9AD5AA1C2B2AF54C00C47448 /* Models */,
 				9AD5A9FB2B2AEB8F00C47448 /* EarthquakesApp.swift */,
-				9AD5A9FF2B2AEB9100C47448 /* Assets.xcassets */,
-				9AD5AA012B2AEB9100C47448 /* Preview Content */,
 				9AD5AA0B2B2AEF5B00C47448 /* QuakeError.swift */,
 				9AD5AA212B2AF79500C47448 /* QuakeLocation.swift */,
 				9AD5AA232B2AFC3600C47448 /* HTTPDataDownloader.swift */,
 				9AD5AA252B2AFC9C00C47448 /* QuakeClient.swift */,
 				9AD5AA2A2B2AFE4100C47448 /* QuakesProvider.swift */,
+				9AD5A9FF2B2AEB9100C47448 /* Assets.xcassets */,
+				9AD5AA012B2AEB9100C47448 /* Preview Content */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";

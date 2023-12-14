@@ -35,6 +35,7 @@
 		9AD5AA452B2B0C3B00C47448 /* NSCache+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA442B2B0C3A00C47448 /* NSCache+Subscript.swift */; };
 		9AD5AA472B2B0E5C00C47448 /* Quake+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA462B2B0E5C00C47448 /* Quake+Preview.swift */; };
 		9AD5AA492B2B0E8700C47448 /* QuakeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA482B2B0E8700C47448 /* QuakeDetail.swift */; };
+		9AD5AA4B2B2B117600C47448 /* QuakeDetailMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA4A2B2B117600C47448 /* QuakeDetailMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		9AD5AA442B2B0C3A00C47448 /* NSCache+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCache+Subscript.swift"; sourceTree = "<group>"; };
 		9AD5AA462B2B0E5C00C47448 /* Quake+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Preview.swift"; sourceTree = "<group>"; };
 		9AD5AA482B2B0E8700C47448 /* QuakeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetail.swift; sourceTree = "<group>"; };
+		9AD5AA4A2B2B117600C47448 /* QuakeDetailMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetailMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				9AD5AA322B2B00E900C47448 /* QuakeMagnitude.swift */,
 				9AD5A9FD2B2AEB8F00C47448 /* Quakes.swift */,
 				9AD5AA482B2B0E8700C47448 /* QuakeDetail.swift */,
+				9AD5AA4A2B2B117600C47448 /* QuakeDetailMap.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				9AD5AA3B2B2B02D900C47448 /* RefreshButton.swift in Sources */,
 				9AD5AA352B2B015200C47448 /* Quakes+Toolbar.swift in Sources */,
 				9AD5AA332B2B00E900C47448 /* QuakeMagnitude.swift in Sources */,
+				9AD5AA4B2B2B117600C47448 /* QuakeDetailMap.swift in Sources */,
 				9AD5AA412B2B056800C47448 /* EditButton.swift in Sources */,
 				9AD5AA1E2B2AF55C00C47448 /* GeoJSON.swift in Sources */,
 				9AD5AA432B2B0C1700C47448 /* CacheEntryObject.swift in Sources */,
@@ -472,6 +476,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,6 +506,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

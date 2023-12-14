@@ -31,6 +31,8 @@
 		9AD5AA3D2B2B032F00C47448 /* ToolbarStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA3C2B2B032F00C47448 /* ToolbarStatus.swift */; };
 		9AD5AA3F2B2B036300C47448 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA3E2B2B036300C47448 /* DeleteButton.swift */; };
 		9AD5AA412B2B056800C47448 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA402B2B056800C47448 /* EditButton.swift */; };
+		9AD5AA432B2B0C1700C47448 /* CacheEntryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA422B2B0C1700C47448 /* CacheEntryObject.swift */; };
+		9AD5AA452B2B0C3B00C47448 /* NSCache+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AA442B2B0C3A00C47448 /* NSCache+Subscript.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		9AD5AA3C2B2B032F00C47448 /* ToolbarStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarStatus.swift; sourceTree = "<group>"; };
 		9AD5AA3E2B2B036300C47448 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		9AD5AA402B2B056800C47448 /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
+		9AD5AA422B2B0C1700C47448 /* CacheEntryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheEntryObject.swift; sourceTree = "<group>"; };
+		9AD5AA442B2B0C3A00C47448 /* NSCache+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCache+Subscript.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				9AD5AA2A2B2AFE4100C47448 /* QuakesProvider.swift */,
 				9AD5A9FF2B2AEB9100C47448 /* Assets.xcassets */,
 				9AD5AA012B2AEB9100C47448 /* Preview Content */,
+				9AD5AA422B2B0C1700C47448 /* CacheEntryObject.swift */,
+				9AD5AA442B2B0C3A00C47448 /* NSCache+Subscript.swift */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 				9AD5AA332B2B00E900C47448 /* QuakeMagnitude.swift in Sources */,
 				9AD5AA412B2B056800C47448 /* EditButton.swift in Sources */,
 				9AD5AA1E2B2AF55C00C47448 /* GeoJSON.swift in Sources */,
+				9AD5AA432B2B0C1700C47448 /* CacheEntryObject.swift in Sources */,
 				9AD5AA312B2B00C700C47448 /* QuakeRow.swift in Sources */,
 				9AD5AA3F2B2B036300C47448 /* DeleteButton.swift in Sources */,
 				9AD5AA3D2B2B032F00C47448 /* ToolbarStatus.swift in Sources */,
@@ -299,6 +306,7 @@
 				9AD5AA392B2B022000C47448 /* Quake+Color.swift in Sources */,
 				9AD5AA0A2B2AEDEC00C47448 /* Quake.swift in Sources */,
 				9AD5A9FC2B2AEB8F00C47448 /* EarthquakesApp.swift in Sources */,
+				9AD5AA452B2B0C3B00C47448 /* NSCache+Subscript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
